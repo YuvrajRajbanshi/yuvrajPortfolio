@@ -49,6 +49,32 @@ img.logo {
   text-transform: uppercase;
   margin-right: 20px;
 }
+
+.navbar-burger {
+  display: none;
+  /* border: solid thin #000; */
+  flex: 1;
+  cursor: pointer;
+}
+
+.navbar-burger ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.navbar-burger ul li {
+  list-style: none;
+}
+.navbar-burger a {
+  /* color: white; */
+  color: var(--secondry-color);
+  text-decoration: none;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
 img#sun {
   width: 40px;
 }
@@ -283,4 +309,25 @@ img.proWeb {
 }
 .appLink img {
   width: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar-burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .navbar-burger ul {
+    display: none;
+  }
+
+  .navsection {
+    flex-direction: column;
+  }
 }
